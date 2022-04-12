@@ -2,7 +2,7 @@ local humanoid = script.Parent
 local jumpHeight = 100
 humanoid.JumpPower = jumpHeight
 
-function onJumpRequest()
+function onJumpRequest()main
   if humanoid:GetState() == Enum.HumanoidStateType.Freefall then
     humanoid.JumpPower = jumpHeight * 1.5
     humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
